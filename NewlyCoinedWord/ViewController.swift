@@ -9,9 +9,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var searchTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        makeSearchTextFieldUI()
+        
+    }
+    
+    func makeSearchTextFieldUI() {
+        searchTextField.layer.borderWidth = 3
+        searchTextField.layer.borderColor = UIColor.black.cgColor
     }
 
 
