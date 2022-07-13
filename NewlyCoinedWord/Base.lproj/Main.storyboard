@@ -44,15 +44,63 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="sQj-lT-YsK">
                                 <rect key="frame" x="20" y="298" width="374" height="300"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r12-xV-B5n">
-                                <rect key="frame" x="177.5" y="433" width="59" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="r12-xV-B5n">
+                                <rect key="frame" x="57.5" y="433" width="299" height="30"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ex-xl-Vjo">
                                 <rect key="frame" x="41.5" y="125.5" width="331" height="152.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmT-6n-jUz">
+                                        <rect key="frame" x="0.0" y="0.0" width="48.5" height="31"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="윰차"/>
+                                        <connections>
+                                            <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rC6-oR-re5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDO-zw-4Jl">
+                                        <rect key="frame" x="54.5" y="0.0" width="48.5" height="31"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="실매"/>
+                                        <connections>
+                                            <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z06-7i-ene"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5WJ-iv-uPm">
+                                        <rect key="frame" x="109" y="0.0" width="72.5" height="31"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="만반잘부"/>
+                                        <connections>
+                                            <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DU1-0H-qf8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x26-AD-Nnh">
+                                        <rect key="frame" x="187.5" y="0.0" width="60.5" height="31"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="꾸안꾸"/>
+                                        <connections>
+                                            <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H1J-Xt-uHl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="x26-AD-Nnh" firstAttribute="leading" secondItem="5WJ-iv-uPm" secondAttribute="trailing" constant="6" id="0vm-fz-bGZ"/>
+                                    <constraint firstItem="lmT-6n-jUz" firstAttribute="leading" secondItem="6Ex-xl-Vjo" secondAttribute="leading" id="3Nc-Jk-PRD"/>
+                                    <constraint firstItem="x26-AD-Nnh" firstAttribute="top" secondItem="6Ex-xl-Vjo" secondAttribute="top" id="4uU-Ky-OgJ"/>
+                                    <constraint firstItem="KDO-zw-4Jl" firstAttribute="top" secondItem="6Ex-xl-Vjo" secondAttribute="top" id="8B1-d6-qee"/>
+                                    <constraint firstItem="5WJ-iv-uPm" firstAttribute="leading" secondItem="KDO-zw-4Jl" secondAttribute="trailing" constant="6" id="C7r-HN-RNh"/>
+                                    <constraint firstItem="KDO-zw-4Jl" firstAttribute="leading" secondItem="lmT-6n-jUz" secondAttribute="trailing" constant="6" id="Sl1-RH-gi6"/>
+                                    <constraint firstItem="lmT-6n-jUz" firstAttribute="top" secondItem="6Ex-xl-Vjo" secondAttribute="top" id="Xcx-KL-wmr"/>
+                                    <constraint firstItem="5WJ-iv-uPm" firstAttribute="top" secondItem="6Ex-xl-Vjo" secondAttribute="top" id="i4s-Wi-El9"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -63,6 +111,7 @@
                             <constraint firstItem="eFZ-UZ-htQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Ef8-xu-zy5"/>
                             <constraint firstItem="sQj-lT-YsK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GMS-Od-hwg"/>
                             <constraint firstItem="sQj-lT-YsK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Hgg-RA-S1u"/>
+                            <constraint firstItem="r12-xV-B5n" firstAttribute="width" secondItem="sQj-lT-YsK" secondAttribute="width" multiplier="0.8" id="NMU-Hf-WHk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sQj-lT-YsK" secondAttribute="trailing" constant="20" id="ac2-yZ-XYZ"/>
                             <constraint firstItem="6Ex-xl-Vjo" firstAttribute="top" secondItem="eFZ-UZ-htQ" secondAttribute="bottom" constant="20" id="bgc-pa-Rwo"/>
                             <constraint firstItem="sQj-lT-YsK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eaW-SZ-ARe"/>
@@ -74,7 +123,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="meaningLabel" destination="r12-xV-B5n" id="Sde-SH-Fv2"/>
                         <outlet property="searchTextField" destination="ouF-f5-Zg5" id="b48-WZ-Wu3"/>
+                        <outletCollection property="buttonArray" destination="lmT-6n-jUz" collectionClass="NSMutableArray" id="ojc-D5-ll8"/>
+                        <outletCollection property="buttonArray" destination="KDO-zw-4Jl" collectionClass="NSMutableArray" id="mXt-WH-GOB"/>
+                        <outletCollection property="buttonArray" destination="5WJ-iv-uPm" collectionClass="NSMutableArray" id="k6S-4L-Lgm"/>
+                        <outletCollection property="buttonArray" destination="x26-AD-Nnh" collectionClass="NSMutableArray" id="gaw-fa-qqY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -85,6 +139,9 @@
     <resources>
         <image name="background" width="300" height="300"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

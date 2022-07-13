@@ -40,6 +40,7 @@
 		856FBF7E287B130F0075F3A6 = {
 			isa = PBXGroup;
 			children = (
+				856FBF8E287B130F0075F3A6 /* ViewController.swift */,
 				856FBF89287B130F0075F3A6 /* NewlyCoinedWord */,
 				856FBF88287B130F0075F3A6 /* Products */,
 			);
@@ -58,7 +59,6 @@
 			children = (
 				856FBF8A287B130F0075F3A6 /* AppDelegate.swift */,
 				856FBF8C287B130F0075F3A6 /* SceneDelegate.swift */,
-				856FBF8E287B130F0075F3A6 /* ViewController.swift */,
 				856FBF90287B130F0075F3A6 /* Main.storyboard */,
 				856FBF93287B13100075F3A6 /* Assets.xcassets */,
 				856FBF95287B13100075F3A6 /* LaunchScreen.storyboard */,
