@@ -61,7 +61,24 @@ class ViewController: UIViewController, UITextFieldDelegate {
             view.endEditing(true)
         }
         
+        searchText(textField)
+        
         return true
+    }
+    
+    func searchText(_ textField: UITextField) {
+        switch textField.text {
+        case "윰차":
+            meaningLabel.text = "유모차의 줄임말"
+        case "실매":
+            meaningLabel.text = "실시간 매니저의 줄임말"
+        case "만반잘부":
+            meaningLabel.text = "만나서 반가워 잘 부탁해의 줄임말"
+        case "꾸안꾸":
+            meaningLabel.text = "꾸민듯 안 꾸민듯의 줄임말"
+        default:
+            meaningLabel.text = "등록되지 않은 정보입니다."
+        }
     }
 }
 
