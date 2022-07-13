@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet var buttonArray: [UIButton]!
@@ -16,11 +16,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.searchTextField.delegate = self
+        
         makeSearchTextFieldUI()
         
         for item in buttonArray {
             makeButtonUI(item)
         }
+        
     }
     
     func makeSearchTextFieldUI() {
@@ -51,6 +54,14 @@ class ViewController: UIViewController {
 
     @IBAction func tapGestureRecognized(_ sender: UITapGestureRecognizer) {
         view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == self.searchTextField {
+            view.endEditing(true)
+        }
+        
+        return true
     }
 }
 
