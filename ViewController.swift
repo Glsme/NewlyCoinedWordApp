@@ -49,5 +49,8 @@ class ViewController: UIViewController {
         }
     }
 
+    @IBAction func tapGestureRecognized(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
 }
 
